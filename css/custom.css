@@ -8,6 +8,9 @@
  */
 body {
   font-family: "Open Sans", sans-serif;
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  position: relative;
 }
 h1,
 h2,
@@ -17,6 +20,13 @@ h5,
 h6 {
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+/* .svg-inline--fa {
+	color: #FFDA00;
+} */
+
 /*
 * jumbotron
 */
@@ -33,9 +43,10 @@ h6 {
 .navbar-brand {
   font-family: "Sriracha", cursive;
   text-transform: uppercase;
-  color: #dccf01 !important;
+  color: #ffda00 !important;
   color: #ffdc07 !important;
   font-weight: 200;
+  font-size: 2.2em;
 }
 /* .navbar-brand:after {
     content: '\u002B';
@@ -50,27 +61,68 @@ nav > a.navbar-brand > span {
   font-family: "Yanone Kaffeesatz", sans-serif;
 } */
 /* Links */
-.nav-item {
-  padding: 0.25rem 0;
+.navbar-light .navbar-nav .nav-link {
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.5);
+  color: #fff !important;
   background-color: transparent;
   border-bottom: 0.25rem solid transparent;
 }
-.nav-item a:focus,
-.nav-item a:hover {
-  border-bottom-color: rgba(255, 255, 255, 0.25);
+.navbar-light .navbar-nav .active .nav-link {
+  color: #ffdc07 !important;
+  border-bottom-color: #ffdc07 !important;
 }
-.active a,
-.active {
-  color: #fff !important;
-  border-bottom-color: #fff !important;
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: rgba(0, 0, 0, 0.5) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.5) !important;
+}
+.navbar-light .navbar-nav .active .nav-link:hover,
+.navbar-light .navbar-nav .active .nav-link:focus {
+  color: #ffdc07 !important;
+  border-bottom-color: rgba(0, 0, 0, 0.5) !important;
+}
+/*
+* Sobre nosotros
+*/
+#sobre-nosotros .contact-info svg {
+  margin-right: 3%;
+}
+#sobre-nosotros .contact-info a {
+  color: #ffc107;
+  font-family: "Roboto", sans-serif;
+}
+#sobre-nosotros .contact-info a:hover,
+#sobre-nosotros .contact-info a:focus {
+  color: rgba(0, 0, 0, 0.5);
+}
+.icon-holder {
+  margin-right: 2%;
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #ffc107;
+  padding: 3%;
 }
 
 /*
+* Contact
+*/
+#contact {
+  font-family: "Roboto", sans-serif;
+}
+.card h2 button {
+  font-size: 1.2rem;
+}
+/*
 * Footer
 */
-.mastfoot {
+#footer {
   font-family: "Source Sans Pro", sans-serif;
   color: rgba(255, 255, 255, 0.5);
   background-color: #333;
@@ -79,12 +131,30 @@ nav > a.navbar-brand > span {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
   text-align: center !important;
+  font-size: 1.2em;
 }
-.mastfoot a {
-  color: #0074d9;
+#footer a:first-child {
+  color: #ffdc07;
+  font-size: 2.4rem;
+  transition: transform 1s;
 }
-.mastfoot a:hover {
+#footer a:first-child:hover {
   color: #fff;
+  text-decoration: none;
+  transform: scale(1.2);
+}
+#footer svg {
+  color: #328fe0;
+  transition: transform 1s;
+}
+#footer svg:hover {
+  transform: scale(1.2);
+}
+#footer svg[class="fa-linkedin"] {
+  color: #328fe0;
+}
+#footer svg.fa-whatsapp {
+  color: #8fe032;
 }
 .inner {
   padding: 1.75rem 1.25rem;
