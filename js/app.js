@@ -27,3 +27,8 @@ $("#navigation .nav-item").click(function () {
     $("#navigation .nav-item").removeClass('active');
     $(this).toggleClass('active');
 });
+
+//add date to footer
+// var currentYear = (new Date).getFullYear();
+
+$("#footer span.copy-left").text((new Date).getFullYear());

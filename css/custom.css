@@ -23,10 +23,6 @@ h6 {
 a, a:hover, a:focus {
   text-decoration: none;
 }
-/* .svg-inline--fa {
-	color: #FFDA00;
-} */
-
 /*
 * jumbotron
 */
@@ -48,18 +44,10 @@ a, a:hover, a:focus {
   font-weight: 200;
   font-size: 2.2em;
 }
-/* .navbar-brand:after {
-    content: '\u002B';
-} */
 nav > a.navbar-brand > span {
   font-size: 1.5em !important;
   font-weight: 600;
 }
-/* nav > a.navbar-brand > strong > span {
-  font-size: 1.3em;
-  font-weight: lighter;
-  font-family: "Yanone Kaffeesatz", sans-serif;
-} */
 /* Links */
 .navbar-light .navbar-nav .nav-link {
   font-weight: 700;
@@ -80,6 +68,14 @@ nav > a.navbar-brand > span {
 .navbar-light .navbar-nav .active .nav-link:focus {
   color: #ffdc07 !important;
   border-bottom-color: rgba(0, 0, 0, 0.5) !important;
+}
+/*
+* Main
+*/
+.list-unstyled li {
+  text-align: left;
+  font-family: "Sriracha", cursive;
+  font-weight: lighter;
 }
 /*
 * Sobre nosotros
@@ -109,7 +105,40 @@ nav > a.navbar-brand > span {
   background: #ffc107;
   padding: 3%;
 }
-
+blockquote {
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #eee;
+  padding: 1.5em 0 0.5em;
+  margin: 1.5em 0;
+  position: relative;
+  font-family: "Sriracha", cursive;
+  font-weight: lighter;
+}
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 3rem;
+  height: 2rem;
+  font: 6em/1.08em 'Yanone Kaffeesatz', sans-serif;
+  color: #666;
+  text-align: center;
+}
+blockquote:after {
+  content: "\2013 \2003" attr(cite);
+  display: block;
+  text-align: right;
+  font-size: 0.875em;
+  color: #ffc107;
+}
+h2.experience {
+  width: 50%;
+}
 /*
 * Contact
 */
@@ -133,12 +162,12 @@ nav > a.navbar-brand > span {
   text-align: center !important;
   font-size: 1.2em;
 }
-#footer a:first-child {
+#footer a.author {
   color: #ffdc07;
   font-size: 2.4rem;
   transition: transform 1s;
 }
-#footer a:first-child:hover {
+#footer aa.author:hover {
   color: #fff;
   text-decoration: none;
   transform: scale(1.2);
