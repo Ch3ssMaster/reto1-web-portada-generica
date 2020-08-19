@@ -10,7 +10,7 @@ Bajo los siguientes términos:
 
     Atribución — Usted debe dar crédito de manera adecuada, brindar un enlace a la licencia, 
     e indicar si se han realizado cambios. Puede hacerlo en cualquier forma razonable, pero 
-    no de forma tal que sugiera que usted o su uso tienen el apoyo de la licenciante.
+    no de forma tal que sugiera que usted o su uso tienen el apoyo del licenciante.
 
     NoComercial — Usted no puede hacer uso del material con propósitos comerciales.
 
