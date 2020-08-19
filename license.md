@@ -4,7 +4,7 @@ Usted es libre de:
     Compartir — copiar y redistribuir el material en cualquier medio o formato
     Adaptar — remezclar, transformar y construir a partir del material
 
-    La licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
+    El licenciante no puede revocar estas libertades en tanto usted siga los términos de la licencia
 
 Bajo los siguientes términos:
 
